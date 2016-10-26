@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    //-webkit-backface-visibility: hidden;
+    -webkit-user-select: none;
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-weight: normal;
+    line-height: 1.6;
+    margin: 0;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    font-family: 'Lato', "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+    @media @xs {
+        overflow: hidden;
+    }
+}
+
+button,
+select,
+option,
+input {
+    font-family: 'Lato', "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+}
+
+#container {
+    height: 100%;
+    @media @xs {
+        overflow-x: hidden;
+    }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+.hidden-xs {
+    @media @xs {
+        display: none !important;
+        opacity: 0;
+    }
+}
+
+.hidden-sm {
+    @media @sm {
+        display: none !important;
+        opacity: 0;
+    }
+}
+
+.hidden-md {
+    @media @md {
+        display: none !important;
+        opacity: 0;
+    }
+}
+
+.hidden-lg {
+    @media @lg {
+        display: none !important;
+        opacity: 0;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+button,
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+
+/* Let's get this party started */
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 6px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #CBCBCB;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #F2f2f2;
+}

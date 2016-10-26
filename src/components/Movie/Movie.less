@@ -1,0 +1,105 @@
+@import (reference) "../Base/Base.less";
+.Movie {
+    width: 100%;
+    height: 100%;
+    > .box {
+        width: 100%;
+        display: flex;
+        .poster {
+            width: 30%;
+            padding: 20px;
+            position: relative;
+            img {
+                width: 100%;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            }
+        }
+        .detail {
+            padding: 20px;
+            width: 70%;
+            .title {
+                font-size: 1.6rem;
+                font-weight: bold;
+                color: #FBFBFB;
+                margin-bottom: 10px;
+            }
+            .date {
+                font-size: 1.3rem;
+                color: #A1A1A1;
+            }
+            .genres {
+                color: #8AACC2;
+                font-size: 1.3rem;
+                margin-bottom: 10px;
+                span {
+                    margin-right: 10px;
+                }
+            }
+            .overview {
+                color: #BBBCBC;
+                font-size: 1.3rem;
+                margin-bottom: 20px;
+            }
+            .vote {
+                color: white;
+                width: 40px;
+                height: 20px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                &.good {
+                    background-color: #118714;
+                }
+                &.bad {
+                    background-color: #FC4554;
+                }
+                &.neutral {
+                    background-color: #FDB02D;
+                }
+            }
+            
+        }
+    }
+    .reviews {
+        padding: 40px 0;
+        .review {
+            margin-bottom: 20px;
+            .author {
+                color: #D74D59;
+                font-size: 1.2rem;
+            }
+            .content {
+                color: #BBBCBC;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .similar {
+        padding: 20px;
+        .title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #FBFBFB;
+        }
+        .movies {
+            display: flex;
+            flex-wrap: wrap;
+            cursor: pointer;
+            .movie {
+                padding: 15px;
+                width: 100px;
+                transition: all 0.3s;
+                &:hover {
+                    transform: translateY(-5px);
+                }
+                img {
+                    width: 100%;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+
+    }
+}

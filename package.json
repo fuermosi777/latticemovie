@@ -1,0 +1,38 @@
+{
+  "name": "latticemovie",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "webpack-dev-server --config webpack.config.dev.js --hot --inline --colors --progress",
+    "build": "webpack --config webpack.config.prod.js -p --progress --colors"
+  },
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "css-loader": "^0.23.1",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "file-loader": "^0.8.5",
+    "jade": "~1.11.0",
+    "jquery": "^2.2.4",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "morgan": "~1.6.1",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-hot-loader": "^1.3.0",
+    "react-router": "^2.4.1",
+    "request": "^2.76.0",
+    "serve-favicon": "~2.3.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
