@@ -5,9 +5,9 @@ Date: 10/25/2016
 
 ## To run the app:
 
-Unzip the package to a location (e.g. /Users/hao/workspace/latticemovie)
+Get the codes:
 
-    $ cd latticemovie
+    $ git clone git@github.com:fuermosi777/latticemovie.git && cd latticemovie
 
 Install dependent packages:
 
