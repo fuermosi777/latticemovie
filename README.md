@@ -1,4 +1,4 @@
-This project is for the coding challenge for Lattice.
+Fetch some movie info from TMDB
 
 Author: Hao Liu
 Date: 10/25/2016
